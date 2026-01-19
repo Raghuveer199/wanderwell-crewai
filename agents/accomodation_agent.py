@@ -4,8 +4,8 @@ from tools.duckdb_tool import DuckDBReadOnlyTool
 
 duckdb_tool = DuckDBReadOnlyTool()
 
-stays_agent = Agent(
-    role="Stays Swarm Agent",
+accomodation_agent = Agent(
+    role="Accomodation Agent",
     goal=(
         "Provide accommodation and room-related insights from DuckDB "
         "when relevant, and remain silent otherwise."

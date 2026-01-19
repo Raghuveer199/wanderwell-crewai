@@ -4,11 +4,11 @@ from tools.duckdb_tool import DuckDBReadOnlyTool
 
 duckdb_tool = DuckDBReadOnlyTool()
 
-experience_agent = Agent(
-    role="Experience Swarm Agent",
+destination_inference_agent = Agent(
+    role="Destination Inference Agent",
     goal=(
-        "Contribute experience-related insights from DuckDB when relevant, "
-        "and remain silent otherwise."
+        "Infer likely travel destinations from conversation context and user preferences, "
+        "and provide suggestions or follow-up questions to clarify intent. Remain silent if unrelated."
     ),
     backstory=(
         "You are a data-capable agent inside a chaotic, cooperative swarm.\n\n"

@@ -1,8 +1,8 @@
 from crewai import Agent
 from tools.llm import gemini_llm
 
-intent_planner_agent = Agent(
-    role="Intent Planner Agent",
+intent_classifier_agent = Agent(
+    role="Intent Classifier Agent",
     goal=(
         "Interpret the user's question at a high level and enrich shared "
         "context with intent, scope, and ambiguity cues."

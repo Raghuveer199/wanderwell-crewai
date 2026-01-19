@@ -4,7 +4,7 @@ from tools.llm import gemini_llm
 crew_response_agent = Agent(
     role="Crew Response Agent",
     goal=(
-        "Collect outputs from ExperienceAgent, StaysAgent, and TravelsAgent, "
+        "Collect outputs from DestinationInferenceAgent, AccomodationAgent, and TransportAgent, "
         "consolidate them, and return a coherent response to the Orchestrator."
     ),
     backstory=(

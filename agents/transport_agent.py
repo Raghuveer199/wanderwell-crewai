@@ -4,8 +4,8 @@ from tools.duckdb_tool import DuckDBReadOnlyTool
 
 duckdb_tool = DuckDBReadOnlyTool()
 
-travels_agent = Agent(
-    role="Travels Swarm Agent",
+transport_agent = Agent(
+    role="Transport Agent",
     goal=(
         "Provide vehicle and ticket insights from DuckDB when relevant, "
         "including seat availability and route aggregation, and remain silent otherwise."
